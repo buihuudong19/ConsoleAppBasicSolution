@@ -1,4 +1,5 @@
 ﻿using System;
+using ConsoleAppOOPBegin.Students;
 
 namespace ConsoleAppOOPBegin
 {
@@ -17,10 +18,15 @@ namespace ConsoleAppOOPBegin
             s2.Dob = new DateTime(2004, 04, 02);
             s2.Mark = 4.6f;
 
-            //print
-            //s1.Print();
-            Console.WriteLine(s1);
-            Console.WriteLine(s2.GetAge());
+            //add s1 va s2 vao chuong trinh
+
+            StudentManagement studentManagement = new StudentManagement();
+            studentManagement.AddStudent(s1);
+            studentManagement.AddStudent(s2);
+
+            Console.WriteLine(studentManagement.Count());
+            studentManagement.Display();
+
 
 
 
