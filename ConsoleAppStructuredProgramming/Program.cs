@@ -43,7 +43,6 @@ namespace ConsoleAppStructuredProgramming
             int[] result = DeleteArray(arrNumbers, 5);
             PrintArray(result);
           
-
             /*
             Console.Write("Hay nhap gia tri thang: ");
             int a = Convert.ToInt32(Console.ReadLine());
@@ -113,7 +112,6 @@ namespace ConsoleAppStructuredProgramming
             temp[numbers.Length] = x;
             return temp;
         }
-
         //dung void, khong dung return
         static void AddInArray(ref int[] numbers, int x)
         {

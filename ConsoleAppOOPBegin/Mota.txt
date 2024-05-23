@@ -1,0 +1,10 @@
+﻿Yêu cầu: viết chương trình quản lý sinh viên (mã, họ tên, địa chỉ, 
+ngày sinh, điểm).
+	 Thực hiện các chức năng:
+		- Cho phép nhập 1 hoặc nhiều sinh viên vào chương trình
+		- Cho phép in tất cả thông sinh viên
+		- Cho phép thay đổi thông tin của 1 SV theo mã 
+		- Cho phép xóa một sinh viên theo mã
+		- cho phép lấy ra một sinh viên theo mã
+		- Sắp xếp tăng dần theo điểm và in ra màn hình
+Hint (phân tích):

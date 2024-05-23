@@ -31,7 +31,21 @@ namespace ConsoleAppOOPBegin
         //4. Add
         public void Add(int x)
         {
-            //logic add code
+            //Thày code luôn cho các em 
+            /*1. Kiem tra xem mảng arrNums còn trống không?
+                 nếu không trống thì phải "nới" rộng mảng arrNumbers lên
+             */
+            if(size >= arrNums.Length) //nếu số lượng thật vừa bằng với length của mảng thì đã full
+            {
+                //Nới mảng bằng cách định nghĩa mảng temp có size lớn hơn arrNumbers
+                int[] temp = new int[size * 2]; //Mảng temp có động rộng gấp đôi so với mảng arrNums
+                //Di chuyển data từ arrNums sang temp
+                Array.Copy(arrNums, 0, temp, 0, size);
+                //Tham chiếu lại mảng ban đầu
+                arrNums = temp;
+            }
+            //Nếu mảng arrNums đã có động rộng thì add phần tử x vào
+            arrNums[size++] = x;
         }
         //5. Update
         public void Update(int x)
@@ -49,5 +63,6 @@ namespace ConsoleAppOOPBegin
             return arrNums[i];            
         }
 
+        public int Size() => size;
     }
 }
