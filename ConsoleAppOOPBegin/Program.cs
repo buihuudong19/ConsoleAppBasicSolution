@@ -21,10 +21,10 @@ namespace ConsoleAppOOPBegin
             //add s1 va s2 vao chuong trinh
 
             StudentManagement studentManagement = new StudentManagement();
-            studentManagement.AddStudent(s1);
-            studentManagement.AddStudent(s2);
+            studentManagement.Add(s1);
+            studentManagement.Add(s2);
 
-            Console.WriteLine(studentManagement.Count());
+            //Console.WriteLine(studentManagement.Count());
             studentManagement.Display();
 
 
