@@ -7,6 +7,7 @@ namespace ConsoleAppOOPBegin
     {
         static void Main(string[] args)
         {
+
             //1. Khởi tạo đối tượng
             Student s1 = new Student(1, "Dong", "Hai Duong",
                 new DateTime(1982, 2, 19), (float)8.5);
